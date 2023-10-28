@@ -13,7 +13,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(AddGitSubmodule)
 
-add_git_submodule(HelloWorld/external/json)
+add_git_submodule(external/json)
 
 option(COMPILE_EXECUTABLE "Wehter to compile the executable" OFF)
 
