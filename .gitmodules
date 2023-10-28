@@ -11,5 +11,5 @@
 	path = HelloWorld/external/cxxopts
 	url = https://github.com/jarro2783/cxxopts
 [submodule "HelloWorld/external/catch2"]
-	path = HelloWorld/external/cxxopts
+	path = HelloWorld/external/catch2
 	url = https://github.com/catchorg/Catch2
