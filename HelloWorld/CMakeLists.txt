@@ -10,12 +10,18 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+include(AddGitSubmodule)
+
+add_git_submodule(HelloWorld/external/json)
+
 option(COMPILE_EXECUTABLE "Wehter to compile the executable" OFF)
 
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
 
 add_subdirectory(configure)
+add_subdirectory(external)
 add_subdirectory(src)
 if (COMPILE_EXECUTABLE)
     add_subdirectory(app)
