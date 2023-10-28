@@ -26,5 +26,5 @@ function(add_sanitizer_flags)
     else()
         MESSAGE(ERRO "Compiler not supported for Sanitizers")
     endif()
-endfunction()
+endfunction(add_sanitizer_flags)
 

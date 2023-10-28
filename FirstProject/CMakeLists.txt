@@ -20,6 +20,8 @@ option(ENABLE_WARNINGS_AS_ERRORS "Enable a Unit Test build" OFF)
 option(ENABLE_SANITIZER_ADDRESS "Enable .." ON)
 option(ENABLE_SANITIZER_UNDEFINED "Enable .." ON)
 
+option(ENABLE_LTO "Enable ..." ON)
+
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(AddGitSubmodule)
 if (ENABLE_WARNINGS)
@@ -29,6 +31,10 @@ endif()
 if (ENABLE_SANITIZER_ADDRESS OR ENABLE_SANITIZER_UNDEFINED)
     include(Sanitizer)
     add_sanitizer_flags()
+endif()
+
+if (ENABLE_LTO)
+    include(LTO)
 endif()
 
 add_git_submodule(external/json)

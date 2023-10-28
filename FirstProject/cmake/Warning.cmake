@@ -30,5 +30,5 @@ function(target_set_warnings TARGET ENABLE ENABLED_AS_ERRORS)
 
     target_compile_options(${TARGET} PRIVATE ${WARNINGS})
     message(STATUS ${WARNINGS})
-endfunction()
+endfunction(target_set_warnings)
 
