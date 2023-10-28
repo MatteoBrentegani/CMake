@@ -17,11 +17,20 @@ option(ENABLE_TESTING "Enable a Unit Test build" OFF)
 option(ENABLE_WARNINGS "Enable a Unit Test build" ON)
 option(ENABLE_WARNINGS_AS_ERRORS "Enable a Unit Test build" OFF)
 
+option(ENABLE_SANITIZER_ADDRESS "Enable .." ON)
+option(ENABLE_SANITIZER_UNDEFINED "Enable .." ON)
+
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(AddGitSubmodule)
 if (ENABLE_WARNINGS)
     include(Warning)
 endif()
+
+if (ENABLE_SANITIZER_ADDRESS OR ENABLE_SANITIZER_UNDEFINED)
+    include(Sanitizer)
+    add_sanitizer_flags()
+endif()
+
 add_git_submodule(external/json)
 add_git_submodule(external/cxxopts)
 add_git_submodule(external/fmt)
@@ -33,7 +42,6 @@ set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
 
 add_subdirectory(configure)
-add_subdirectory(external)
 add_subdirectory(src)
 if (COMPILE_EXECUTABLE)
     add_subdirectory(app)

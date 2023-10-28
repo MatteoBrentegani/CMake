@@ -13,7 +13,8 @@ int main()
     std::cout << project_name << "\n";
     std::cout << project_version << "\n";
     
-    int i;
+    int x[2];
+    x[2]=1337;
 
     std::cout << "JSON Lib version:" 
         << NLOHMANN_JSON_VERSION_MAJOR << "."
