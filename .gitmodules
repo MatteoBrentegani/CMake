@@ -1,15 +1,15 @@
-[submodule "HelloWorld/external/json"]
-	path = HelloWorld/external/json
+[submodule "FirstProject/external/json"]
+	path = FirstProject/external/json
 	url = https://github.com/nlohmann/json
-[submodule "HelloWorld/external/fmt"]
-	path = HelloWorld/external/fmt
+[submodule "FirstProject/external/fmt"]
+	path = FirstProject/external/fmt
 	url = https://github.com/fmtlib/fmt
-[submodule "HelloWorld/external/spdlog"]
-	path = HelloWorld/external/spdlog
+[submodule "FirstProject/external/spdlog"]
+	path = FirstProject/external/spdlog
 	url = https://github.com/gabime/spdlog
-[submodule "HelloWorld/external/cxxopts"]
-	path = HelloWorld/external/cxxopts
+[submodule "FirstProject/external/cxxopts"]
+	path = FirstProject/external/cxxopts
 	url = https://github.com/jarro2783/cxxopts
-[submodule "HelloWorld/external/catch2"]
-	path = HelloWorld/external/catch2
+[submodule "FirstProject/external/catch2"]
+	path = FirstProject/external/catch2
 	url = https://github.com/catchorg/Catch2
