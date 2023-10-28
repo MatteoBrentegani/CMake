@@ -14,6 +14,7 @@ set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(AddGitSubmodule)
 
 add_git_submodule(external/json)
+add_git_submodule(external/fmt)
 
 option(COMPILE_EXECUTABLE "Wehter to compile the executable" OFF)
 

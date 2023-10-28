@@ -1,3 +1,12 @@
 [submodule "HelloWorld/external/json"]
 	path = HelloWorld/external/json
 	url = https://github.com/nlohmann/json
+[submodule "HelloWorld/external/fmt"]
+	path = HelloWorld/external/fmt
+	url = https://github.com/fmtlib/fmt
+[submodule "HelloWorld/external/spdlog"]
+	path = HelloWorld/external/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "HelloWorld/external/cxxopts"]
+	path = HelloWorld/external/cxxopts
+	url = https://github.com/jarro2783/cxxopts
